@@ -1,50 +1,49 @@
 body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .navbar {
-    background-color: #0f4876;
-    color: #fff;
-    text-align: center;
-    position: relative;
-    box-shadow: rgba(128, 0, 128, 0.1);
-    margin: 0.5em;
-    border-radius: 5px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  background-color: #0f4876;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  box-shadow: rgba(128, 0, 128, 0.1);
+  margin: 0.5em;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .navbar-title {
-    font-size: 1.5rem;
-    font-weight: bold;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .navbar-tabs {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
 }
 
 .navbar-tabs .tab {
-    cursor: pointer;
-    padding: 0.5rem 1rem;
-    color: #fff;
-    background-color: #ED6C02;
-    margin: 0 0.5rem;
-    border-radius: 5px;
-    transition: 0.2s all linear;
-    box-shadow: rgba(128, 0, 128, 0.1);
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  background-color: #ed6c02;
+  margin: 0 0.5rem;
+  border-radius: 5px;
+  transition: 0.2s all linear;
+  box-shadow: rgba(128, 0, 128, 0.1);
 }
 
 .navbar-tabs .tab.active {
-    background-color: #fff;
-    color: #0f4876;
-
+  background-color: #fff;
+  color: #0f4876;
 }
 
 /* .search-container {
@@ -56,138 +55,149 @@ body {
 } */
 
 #search-input {
-    width: 100%;
-    border: 1px solid #0f4876;
-    outline: none;
-    padding: 1.2em 2em;
-    border-radius: 50px;
+  width: 100%;
+  border: 1px solid #0f4876;
+  outline: none;
+  padding: 1.2em 2em;
+  border-radius: 50px;
 }
 
-h2{
-    width: 20%;
-    text-align: center;
-    background: #0f4876;
-    padding: 0.4em 1em;
-    color: #fff;
-    border-radius: 7px;
+h2 {
+  width: 20%;
+  text-align: center;
+  background: #0f4876;
+  padding: 0.4em 1em;
+  color: #fff;
+  border-radius: 7px;
 }
 
 .content {
-    padding: 2rem;
+  padding: 2rem;
 }
 
 .tab-content {
-    display: none;
+  display: none;
 }
 
 .tab-content.active {
-    display: block;
+  display: block;
 }
 
 table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 1rem;
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  table-layout: fixed;
+  /* margin-left: auto; */
+  /* margin-right: auto; */
 }
 
-table, th, td {
-    border: 1px solid #ddd;
+table,
+th,
+td {
+  border: 1px solid #ddd;
 }
 
-th, td {
-    padding: 1rem;
-    text-align: left;
-    transition: 0.2s all linear;
+th,
+td {
+  padding: 1rem;
+  text-align: left;
+  transition: 0.2s all linear;
+  word-wrap: break-word !important;
+  word-break: break-word !important;
 }
 
 th {
-    background-color: #f4f4f4;
+  background-color: #f4f4f4;
 }
-th:hover, td:hover{
-    background-color: #f2f2f2;
+th:hover,
+td:hover {
+  background-color: #f2f2f2;
 }
 
 /* Add loading spinner animation */
 @keyframes spinner {
-    to {transform: rotate(360deg);}
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .loading-spinner {
-    border: 4px solid rgba(0, 0, 0, 0.1);
-    border-left-color: #333;
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
-    animation: spinner 0.6s linear infinite;
-    display: inline-block;
-    vertical-align: middle;
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-left-color: #333;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spinner 0.6s linear infinite;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 /* Add transition effect for table row visibility */
 tbody tr {
-    transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
 }
 
 /* Hide table rows by default */
 tbody tr {
-    opacity: 1;
+  opacity: 1;
 }
 
 /* Show table rows when transitioned */
 tbody tr.visible {
-    opacity: 1;
+  opacity: 1;
 }
 table ol {
-    padding-left: 20px; /* Adjust padding as needed */
+  padding-left: 20px; /* Adjust padding as needed */
 }
 
 table ol li {
-    margin-bottom: 0.5em; /* Adjust margin as needed */
+  margin-bottom: 0.5em; /* Adjust margin as needed */
 }
 /* Add highlight class to matched cells */
 .highlight {
-    background-color: #e0e5f2; /* Light blue background color */
+  background-color: #e0e5f2; /* Light blue background color */
 }
 
 /* Add transition effect for background color */
 .highlight {
-    transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
 }
 
 @media screen and (max-width: 768px) {
-    .navbar-title {
-        font-size: 1.2rem; /* Decrease font size */
-    }
+  .navbar-title {
+    font-size: 1.2rem; /* Decrease font size */
+  }
 
-    .navbar-tabs .tab {
-        padding: 0.4rem 0.8rem; /* Decrease padding */
-        margin: 0 0.3rem; /* Decrease margin */
-    }
+  .navbar-tabs .tab {
+    padding: 0.4rem 0.8rem; /* Decrease padding */
+    margin: 0 0.3rem; /* Decrease margin */
+  }
 
-    #search-input {
-        max-width: 300px; /* Decrease max width */
-    }
+  #search-input {
+    max-width: 300px; /* Decrease max width */
+  }
 
-    .content {
-        padding: 1rem; /* Decrease padding */
-    }
+  .content {
+    padding: 1rem; /* Decrease padding */
+  }
 }
 
 @media screen and (max-width: 576px) {
-    .navbar-title {
-        font-size: 1rem; /* Decrease font size further */
-    }
+  .navbar-title {
+    font-size: 1rem; /* Decrease font size further */
+  }
 
-    .navbar-tabs .tab {
-        padding: 0.3rem 0.6rem; /* Further decrease padding */
-        margin: 0 0.2rem; /* Further decrease margin */
-    }
+  .navbar-tabs .tab {
+    padding: 0.3rem 0.6rem; /* Further decrease padding */
+    margin: 0 0.2rem; /* Further decrease margin */
+  }
 
-    #search-input {
-        max-width: 250px; /* Further decrease max width */
-    }
+  #search-input {
+    max-width: 250px; /* Further decrease max width */
+  }
 
-    .content {
-        padding: 0.5rem; /* Further decrease padding */
-    }
+  .content {
+    padding: 0.5rem; /* Further decrease padding */
+  }
 }
