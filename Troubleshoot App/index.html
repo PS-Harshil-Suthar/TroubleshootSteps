@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Troubleshooting & Guide</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-title">Troubleshooting & Guide</div>
+        <div>
+            <ul class="navbar-tabs">
+                <li class="tab active" data-content="outlook">Outlook</li>
+                <li class="tab" data-content="vm-slowness">VM Slowness</li>
+                <li class="tab" data-content="ms-teams">MS Teams</li>
+            </ul>
+        </div>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search..." />
+        </div>
+    </nav>
+    <div class="content">
+        <div id="outlook" class="tab-content active">
+            <h2>Outlook Issues</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Issue</th>
+                        <th>Symptoms</th>
+                        <th>Solution & Steps</th>
+                    </tr>
+                </thead>
+                <tbody id="outlook-table">
+                    <tr>
+                        <td>Email not sending</td>
+                        <td>Stuck in Outbox</td>
+                        <td>Check server settings, restart Outlook, ensure internet connection.</td>
+                    </tr>
+                    <tr>
+                        <td>Cannot receive emails</td>
+                        <td>No new emails in Inbox</td>
+                        <td>Check spam folder, ensure account settings are correct, contact email provider.</td>
+                    </tr>
+                    <tr>
+                        <td>Outlook crashes frequently</td>
+                        <td>Application stops responding</td>
+                        <td>Update Outlook, disable add-ins, repair Office installation.</td>
+                    </tr>
+                    <tr>
+                        <td>Search not working</td>
+                        <td>Cannot find emails</td>
+                        <td>Rebuild search index, check search settings, update Outlook.</td>
+                    </tr>
+                    <tr>
+                        <td>Attachment size limit</td>
+                        <td>Cannot send large files</td>
+                        <td>Compress files, use a cloud storage link, adjust server settings.</td>
+                    </tr>
+                    <tr>
+                        <td>Slow performance</td>
+                        <td>Outlook is sluggish</td>
+                        <td>Archive old emails, disable unnecessary add-ins, update Outlook.</td>
+                    </tr>
+                    <tr>
+                        <td>Calendar issues</td>
+                        <td>Events not syncing</td>
+                        <td>Check calendar settings, re-add account, update Outlook.</td>
+                    </tr>
+                    <tr>
+                        <td>Password prompt keeps appearing</td>
+                        <td>Constant password requests</td>
+                        <td>Update password, reconfigure account settings, clear credentials.</td>
+                    </tr>
+                    <tr>
+                        <td>Outlook disconnected</td>
+                        <td>Cannot connect to server</td>
+                        <td>Check network connection, verify server settings, restart Outlook.</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </div>
+        <div id="vm-slowness" class="tab-content">
+            <h2>VM Slowness Issues</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Issue</th>
+                        <th>Symptoms</th>
+                        <th>Solution & Steps</th>
+                    </tr>
+                </thead>
+                <tbody id="vm-slowness-table">
+                    <tr>
+                        <td>High CPU Usage</td>
+                        <td>Slow response time</td>
+                        <td>Check processes, allocate more resources, optimize VM configuration.</td>
+                    </tr>
+                    <tr>
+                        <td>Disk IO bottleneck</td>
+                        <td>Slow read/write speeds</td>
+                        <td>Upgrade storage, defragment disk, monitor disk usage.</td>
+                    </tr>
+                    <tr>
+                        <td>Memory Leak</td>
+                        <td>Gradual performance degradation</td>
+                        <td>Identify and fix leaking processes, increase memory allocation, reboot VM.</td>
+                    </tr>
+                    <tr>
+                        <td>Network Latency</td>
+                        <td>Slow network performance</td>
+                        <td>Check network settings, optimize network configuration, use faster network interfaces.</td>
+                    </tr>
+                    <tr>
+                        <td>Storage space running out</td>
+                        <td>Low disk space warning</td>
+                        <td>Clean up unnecessary files, extend disk size, add additional storage.</td>
+                    </tr>
+                    <tr>
+                        <td>Backup issues</td>
+                        <td>Failed backups</td>
+                        <td>Check backup settings, ensure sufficient space, troubleshoot backup software.</td>
+                    </tr>
+                    <tr>
+                        <td>VM unresponsive</td>
+                        <td>VM hangs or freezes</td>
+                        <td>Check resource allocation, restart VM, investigate logs for errors.</td>
+                    </tr>
+                    <tr>
+                        <td>Update issues</td>
+                        <td>Updates fail to install</td>
+                        <td>Check update settings, free up space, restart VM, manually install updates.</td>
+                    </tr>
+                    <tr>
+                        <td>Network disconnections</td>
+                        <td>Frequent network drops</td>
+                        <td>Check network configuration, monitor network stability, update network drivers.</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </div>
+        <div id="ms-teams" class="tab-content">
+            <h2>MS Teams Issues</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Issue</th>
+                        <th>Symptoms</th>
+                        <th>Solution & Steps</th>
+                    </tr>
+                </thead>
+                <tbody id="ms-teams-table">
+                    <tr>
+                        <td>Cannot join meetings</td>
+                        <td>Error message appears</td>
+                        <td>Check network connection, restart Teams, update Teams application.</td>
+                    </tr>
+                    <tr>
+                        <td>Audio/Video not working</td>
+                        <td>No sound or video during calls</td>
+                        <td>Check device settings, update drivers, test with different device.</td>
+                    </tr>
+                    <tr>
+                        <td>Chat messages not sending</td>
+                        <td>Messages stuck in sending state</td>
+                        <td>Check network connection, restart Teams, clear cache.</td>
+                    </tr>
+                    <tr>
+                        <td>Screen sharing issues</td>
+                        <td>Unable to share screen</td>
+                        <td>Check permissions, restart Teams, update Teams application.</td>
+                    </tr>
+                    <tr>    
+                        <td>Login issues</td>
+                        <td>Unable to sign in</td>
+                        <td>Check credentials, reset password, ensure account is active, check internet connection.</td>
+                    </tr>
+                    <tr>
+                        <td>Notifications not working</td>
+                        <td>Missed messages or alerts</td>
+                        <td>Check notification settings, update Teams, restart device.</td>
+                    </tr>
+                    <tr>
+                        <td>File upload issues</td>
+                        <td>Cannot upload files</td>
+                        <td>Check file size, ensure proper permissions, try a different browser.</td>
+                    </tr>
+                    <tr>
+                        <td>Sync issues</td>
+                        <td>Teams not syncing with Outlook</td>
+                        <td>Check account connections, update Teams and Outlook, restart both applications.</td>
+                    </tr>
+                    <tr>
+                        <td>Performance issues</td>
+                        <td>Teams is slow or unresponsive</td>
+                        <td>Clear cache, update Teams, check system resources.</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
